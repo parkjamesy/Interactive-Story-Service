@@ -127,9 +127,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-# Block these ports from being used since the frontend will be handling them.
 CORS_ORIGIN_WHITELIST = [
-    'https://localhost:5173',
-    'https://localhost:3000'
+     'http://127.0.0.1:5173'
 ]

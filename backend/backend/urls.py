@@ -21,9 +21,9 @@ from interactive_story import views
 
 
 router = routers.DefaultRouter()
-router.register(r'stories', views.StoryView, 'interactive_story')
+router.register(r'stories', views.StoryView, 'stories')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('api/', include(router.urls)), 
 ]

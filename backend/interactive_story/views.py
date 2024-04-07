@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .serializers import StorySerializers
 from .models import Story
+from .serializers import StorySerializers
 
 # Create your views here.
 
